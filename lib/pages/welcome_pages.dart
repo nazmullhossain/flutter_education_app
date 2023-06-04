@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home_pages.dart';
+
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
 
@@ -79,7 +81,9 @@ class WelcomePage extends StatelessWidget {
                       color: const Color(0xFF674AEF),
                       borderRadius: BorderRadius.circular(10),
                       child: InkWell(
-                        onTap: (){},
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                        },
                         child: Container(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 80,
